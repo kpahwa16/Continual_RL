@@ -336,7 +336,7 @@ if __name__ == '__main__':
     config.port_one_four = args.port_one_four
     config.port_one_five = args.port_one_five
     config.port_one_six = args.port_one_six
-    configf.port_one_seven = args.port_one_seven
+    config.port_one_seven = args.port_one_seven
     #
     config.port_two_three = args.port_two_three
     config.port_two_four = args.port_two_four
@@ -430,7 +430,7 @@ if __name__ == '__main__':
                                                            HOST = "0.0.0.0",
                                                            num_listeners = 6)
                                                            
-           connection_1_7, send_sock_1_7 = server_connect(PORT = config.port_one_seven,
+            connection_1_7, send_sock_1_7 = server_connect(PORT = config.port_one_seven,
                                                            HOST = "0.0.0.0",
                                                            num_listeners = 6)
                                                            
@@ -586,9 +586,9 @@ if __name__ == '__main__':
         }
         connection_dict = {
             "connection_1_2": connection_1_2, "connection_1_3": connection_1_3, "connection_1_4": connection_1_4, "connection_1_5": connection_1_5,
-            "connection_1_6": connection_1_6, "connection_1_7": connection_1_7
+            "connection_1_6": connection_1_6, "connection_1_7": connection_1_7,
             "connection_2_3": connection_2_3, "connection_2_4": connection_2_4, "connection_2_5": connection_2_5,"connection_2_6": connection_2_6,
-            "connection_2_7": connection_2_7
+            "connection_2_7": connection_2_7,
             "connection_3_4": connection_3_4,"connection_3_5": connection_3_5, "connection_3_6": connection_3_6, "connection_3_7": connection_3_7,
             "connection_4_5": connection_4_5,"connection_4_6": connection_4_6, "connection_4_7": connection_4_7,
             "connection_5_6": connection_5_6,"connection_5_7": connection_5_7,
