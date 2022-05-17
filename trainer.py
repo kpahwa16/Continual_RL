@@ -627,7 +627,7 @@ class Trainer:
                                 send_file_path=local_membuf_path)
                     server_send(None, self.r_sock["recv_sock_three_six"], # send to agent 3
                                 send_file_path=local_membuf_path)
-                    server_send(None, self.connection["recv_sock_four_six"], # send to agent 4
+                    server_send(None, self.r_sock["recv_sock_four_six"], # send to agent 4
                                 send_file_path=local_membuf_path)
                     
                     time.sleep(14)
