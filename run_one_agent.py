@@ -408,7 +408,7 @@ if __name__ == '__main__':
 
     atari_env_client = None
     send_sock_1_2 = send_sock_1_3 = send_sock_1_4 = send_sock_1_5 = send_sock_1_6 = send_sock_1_7 = send_sock_2_3 = send_sock_2_4 = send_sock_2_5 = send_sock_2_6= send_sock_2_7 = send_sock_3_4 = send_sock_3_5 = send_sock_3_6 = send_sock_3_7 = send_sock_4_5 = send_sock_4_6 = send_sock_4_7 = send_sock_5_6 = send_sock_5_7 = send_sock_6_7 =  None
-    recv_sock_one_two = recv_sock_one_three = recv_sock_one_four = recv_sock_one_five = recv_sock_one_six = recv_sock_one_seven =  recv_sock_two_three = recv_sock_two_four = recv_sock_two_five = recv_sock_two_sock = recv_sock_two_seven =  recv_sock_three_four = recv_sock_three_five = recv_sock_three_six = recv_sock_three_seven =  recv_sock_four_five = recv_sock_four_six = recv_sock_four_seven = recv_sock_five_six = recv_sock_five_seven = recv_sock_six_seven = None
+    recv_sock_one_two = recv_sock_one_three = recv_sock_one_four = recv_sock_one_five = recv_sock_one_six = recv_sock_one_seven =  recv_sock_two_three = recv_sock_two_four = recv_sock_two_five = recv_sock_two_six = recv_sock_two_seven =  recv_sock_three_four = recv_sock_three_five = recv_sock_three_six = recv_sock_three_seven =  recv_sock_four_five = recv_sock_four_six = recv_sock_four_seven = recv_sock_five_six = recv_sock_five_seven = recv_sock_six_seven = None
     connection_1_2 = connection_1_3 = connection_1_4 = connection_1_5 = connection_1_6 = connection_1_7 = connection_2_3 = connection_2_4 = connection_2_5 = connection_2_6 = connection_2_7 =  connection_3_4 = connection_3_5 = connection_3_6 = connection_3_7 =  connection_4_5 = connection_4_6 = connection_4_7 = connection_5_6 = connection_5_7 = connection_6_7 = None
     send_sock_dict = {}
     recv_sock_dict = {}
@@ -588,11 +588,10 @@ if __name__ == '__main__':
         }
         recv_sock_dict = {
             "recv_sock_one_two": recv_sock_one_two, "recv_sock_one_three": recv_sock_one_three, "recv_sock_one_four": recv_sock_one_four, "recv_sock_one_five": recv_sock_one_five,  "recv_sock_one_six": recv_sock_one_six, "recv_sock_one_seven": recv_sock_one_seven,
-            "recv_sock_two_three": recv_sock_two_three, "recv_sock_two_four": recv_sock_two_four, "recv_sock_two_five": recv_sock_two_five,
-                        "recv_sock_two_six": recv_sock_two_six, "recv_sock_two_seven": recv_sock_two_seven,
-            "recv_sock_three_four": recv_sock_three_four, "recv_sock_three_five": recv_sock_three_five,"recv_sock_three_six": recv_sock_three_six,
-                        "recv_sock_three_seven": recv_sock_three_seven, "recv_sock_four_five": recv_sock_four_five,"recv_sock_four_six": recv_sock_four_six,
-                                                "recv_sock_four_seven": recv_sock_four_seven,"recv_sock_five_six": recv_sock_five_six,"recv_sock_five_seven": recv_sock_five_seven, "recv_sock_six_seven":recv_sock_six_seven
+            "recv_sock_two_three": recv_sock_two_three, "recv_sock_two_four": recv_sock_two_four, "recv_sock_two_five": recv_sock_two_five, "recv_sock_two_six": recv_sock_two_six, "recv_sock_two_seven": recv_sock_two_seven,
+            "recv_sock_three_four": recv_sock_three_four, "recv_sock_three_five": recv_sock_three_five,"recv_sock_three_six": recv_sock_three_six,"recv_sock_three_seven": recv_sock_three_seven, "recv_sock_four_five": recv_sock_four_five,"recv_sock_four_six": recv_sock_four_six,
+            "recv_sock_four_seven": recv_sock_four_seven,"recv_sock_five_six": recv_sock_five_six,"recv_sock_five_seven": recv_sock_five_seven, 
+            "recv_sock_six_seven":recv_sock_six_seven
         }
         connection_dict = {
             "connection_1_2": connection_1_2, "connection_1_3": connection_1_3, "connection_1_4": connection_1_4, "connection_1_5": connection_1_5,
