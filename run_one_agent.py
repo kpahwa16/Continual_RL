@@ -251,17 +251,29 @@ if __name__ == '__main__':
     parser.add_argument('--port_one_three', type=int, default=1501, help='port number for connecting agent 1 and agent 3. Use if need be.')
     parser.add_argument('--port_one_four', type=int, default=1502, help='port number for connecting agent 1 and agent 4. Use if need be.')
     parser.add_argument('--port_one_five', type=int, default=1503, help='port number for connecting agent 1 and agent 5. Use if need be.')
-    parser.add_argument('--port_two_three', type=int, default=1504, help='port number for connecting agent 2 and agent 3. Use if need be.')
-    parser.add_argument('--port_two_four', type=int, default=1505, help='port number for connecting agent 2 and agent 4. Use if need be.')
-    parser.add_argument('--port_two_five', type=int, default=1506, help='port number for connecting agent 2 and agent 5. Use if need be.')
-    parser.add_argument('--port_three_four', type=int, default=1507, help='port number for connecting agent 3 and agent 4. Use if need be.')
-    parser.add_argument('--port_three_five', type=int, default=1508, help='port number for connecting agent 3 and agent 5. Use if need be.')
-    parser.add_argument('--port_four_five', type=int, default=1509, help='port number for connecting agent 3 and agent 1. Use if need be.')
+    parser.add_argument('--port_one_six', type=int, default=1504, help='port number for connecting agent 1 and agent 6. Use if need be.')
+    parser.add_argument('--port_one_seven', type=int, default=1505, help='port number for connecting agent 1 and agent 7. Use if need be.')
+    parser.add_argument('--port_two_three', type=int, default=1506, help='port number for connecting agent 2 and agent 3. Use if need be.')
+    parser.add_argument('--port_two_four', type=int, default=1507, help='port number for connecting agent 2 and agent 4. Use if need be.')
+    parser.add_argument('--port_two_five', type=int, default=1508, help='port number for connecting agent 2 and agent 5. Use if need be.')
+    parser.add_argument('--port_two_six', type=int, default=1509, help='port number for connecting agent 2 and agent 6. Use if need be.')
+    parser.add_argument('--port_two_seven', type=int, default=1510, help='port number for connecting agent 2 and agent 7. Use if need be.')
+    parser.add_argument('--port_three_four', type=int, default=1511, help='port number for connecting agent 3 and agent 4. Use if need be.')
+    parser.add_argument('--port_three_five', type=int, default=1512, help='port number for connecting agent 3 and agent 5. Use if need be.')
+    parser.add_argument('--port_three_six', type=int, default=1513, help='port number for connecting agent 3 and agent 6. Use if need be.')
+    parser.add_argument('--port_three_seven', type=int, default=1514, help='port number for connecting agent 3 and agent 7. Use if need be.')
+    parser.add_argument('--port_four_five', type=int, default=1515, help='port number for connecting agent 4 and agent 5. Use if need be.')
+    parser.add_argument('--port_four_six', type=int, default=1516, help='port number for connecting agent 4 and agent 6. Use if need be.')
+    parser.add_argument('--port_four_seven', type=int, default=1517, help='port number for connecting agent 4 and agent 7. Use if need be.')
+    parser.add_argument('--port_five_six', type=int, default=1518, help='port number for connecting agent 5 and agent 6. Use if need be.')
+    parser.add_argument('--port_five_seven', type=int, default=1519, help='port number for connecting agent 5 and agent 7. Use if need be.')
+    parser.add_argument('--port_six_seven', type=int, default=1520, help='port number for connecting agent 6 and agent 7. Use if need be.')
     parser.add_argument('--host_one', type=str, default="localhost", help='IP of agent 1, used for responding to agent 1 from agent 2')
     parser.add_argument('--host_two', type=str, default="localhost", help='IP of agent 2, used for responding to agent 2 from agent 3')
     parser.add_argument('--host_three', type=str, default="localhost", help='IP of agent 3, used for responding to agent 3 from agent 4')
     parser.add_argument('--host_four', type=str, default="localhost", help='IP of agent 4, used for responding to agent 4 from agent 5')
-    parser.add_argument('--host_five', type=str, default="localhost", help='IP of agent 4, used for responding to agent 5 from agent 1')
+    parser.add_argument('--host_five', type=str, default="localhost", help='IP of agent 5, used for responding to agent 5 from agent 6')
+    parser.add_argument('--host_six', type=str, default="localhost", help='IP of agent 6, used for responding to agent 6 from agent 7')
     parser.add_argument('--send_first', dest='send_first', action='store_true', help='set to True to send local membuf first then receive from others, set to false vice versa')
     parser.add_argument('--send_second', dest='send_second', action='store_true', help='set to True to send local membuf second then receive from others, set to false vice versa')
     parser.add_argument('--send_third', dest='send_third', action='store_true', help='set to True to send local membuf third then receive from others, set to false vice versa')
@@ -271,7 +283,7 @@ if __name__ == '__main__':
     parser.add_argument('--send_seventh', dest='send_seventh', action='store_true', help='set to True to send local membuf seventh then receive from others, set to false vice versa')
     parser.add_argument('--default_comm_logic', dest='default_comm_logic', action='store_true', help='set to True to use default training protocol in milestone 2')
     parser.add_argument('--open_atari_server', dest='open_atari_server', action='store_true', help='dummy argument, set to True to run remote Atari server')
-    parser.add_argument('--atari_server_hostname', dest='atari_server_hostname', type=str, default="10.161.159.142", help='IP of Atari server')
+    parser.add_argument('--atari_server_hostname', dest='atari_server_hostname', type=str, default="10.162.62.51", help='IP of Atari server')
     parser.add_argument('--atari_server_port', type=int, default=3333, help='port number to connect to remote Atari server')
 
     
@@ -365,8 +377,6 @@ if __name__ == '__main__':
     config.host_four = args.host_four
     config.host_five = args.host_five
     config.host_six = args.host_six
-    config.host_seven = args.host_seven
-    
     config.open_atari_server = True if args.open_atari_server else False
     config.atari_server_hostname = args.atari_server_hostname
     config.atari_server_port = args.atari_server_port
