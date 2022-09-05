@@ -1,5 +1,3 @@
-# Continual Reinforcement Leearning for Atari Games
-
 
 To run the pipeline, use run_one_agent.py.
 
